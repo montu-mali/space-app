@@ -5,21 +5,23 @@ body {
 }
 
 .header-box {
-    background-color:black;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
     color: white;
     box-shadow: 2px 2px 2px rgb(73, 72, 72);
-    position:sticky;
+    position: sticky;
 
     .logo {
         display: flex;
         justify-content: center;
         text-align: center;
+
         img {
-            border-radius: 50%;
-            width: 40px;
+            // border-radius: 50%;
+            border-radius: 5px;
+            width: 70px;
             height: 40px;
         }
     }
@@ -32,12 +34,58 @@ body {
                 list-style: none;
                 padding: 0;
                 margin: 0;
+
                 li {
                     font-weight: 600;
                     cursor: pointer;
                     font-size: 20px;
+
+                    .navLink{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
                 }
-                li:hover{
+
+                .dropdown-box {
+                    position: relative;
+                    display: inline-block;
+
+                    .dropdown {
+
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #b68f0f;
+                            min-width: 110px;
+                            box-shadow: 0px 8px 16px rgba(231, 226, 226, 0.2);
+                            z-index: 1;
+                            border-radius: 5px;
+                            text-align: center;
+
+                            a {
+                                color: black;
+                                padding: 10px 16px;
+                                text-decoration: none;
+                                display: block;
+                                color: black;
+
+                            }
+
+                            a:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown-box:hover .dropdown-content {
+                    display: block;
+                }
+
+                li:hover {
                     color: red;
                 }
             }

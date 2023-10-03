@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Home.scss"
+import { Link, NavLink } from 'react-router-dom'
+import Member from '../MemberPage/Member'
 
 const Home = () => {
     return (<>
@@ -11,6 +13,8 @@ const Home = () => {
                         <h1>ViewSpace</h1>
                         <p>EXPLORE THE UNIVERSE WITH INTERACTIVES AND VIDEOS</p>
                     </div>
+                    {/* <NavLink to=''></NavLink> */}
+                    <Link to="/home"></Link>
                 </div>
             </div>
             <div className="overview">
@@ -21,6 +25,11 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
+
+{/* {-----------Member------------ */}
+
+        <Member/>
     </>
     )
 }
