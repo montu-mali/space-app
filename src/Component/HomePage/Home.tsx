@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.scss"
 import { Link, NavLink } from 'react-router-dom'
 import Member from '../MemberPage/Member'
+// import video from "../../assets/video.mp4"
 
 const Home = () => {
     return (<>
@@ -21,7 +22,7 @@ const Home = () => {
                 <h2>Over View</h2>
                 <p>ViewSpace is a free, web-based collection of digital interactives and videos highlighting the latest developments in astronomy and Earth science.</p>
                 <div className="video-box">
-                    <video src=""  controls></video>
+                    <video src="../../assets/video.mp4"  controls></video>
                 </div>
             </div>
         </div>

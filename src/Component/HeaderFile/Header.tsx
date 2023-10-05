@@ -2,6 +2,7 @@ import React from 'react'
 import "./Header.scss"
 import { Link, NavLink } from 'react-router-dom'
 import viewspace from "../../assets/viewspace.jpg"
+import logo from "../../assets/logo.png"
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       <header>
         <div className="header-box">
           <div className="logo">
-            <Link to="/"><img src={viewspace} alt="logo" /></Link>
+            <Link to="/"><img src={logo} alt="logo" /></Link>
           </div>
           {/* <NavLink to=''></NavLink> */}
           <div className="navbar-box">
