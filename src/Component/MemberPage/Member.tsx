@@ -9,29 +9,34 @@ import teamData from './MemberApi'
 import montu from "../../assets/montu.jpg"
 import dhrumil from "../../assets/dhrumil.jpg"
 import ravindra from "../../assets/ravindra.jpg"
+import avtar from "../../assets/avtar.jpg"
+
 
 const Member = () => {
 
-    const weatherLogo = (name:any) => {
+    const weatherLogo = (name: any) => {
         switch (name) {
             case "montu":
                 return <img src={montu} alt="yuyu" />
                 break;
             case "dhrumil":
-                return <img src={dhrumil} alt="yuyu" />
+                return <img src={dhrumil} alt="image" />
                 break;
             case "ravindra":
-                return <img src={ravindra} alt="yuyu" />
+                return <img src={ravindra} alt="image" />
                 break;
             // case "gaurang":
-            //     return <img src={ } alt="yuyu" />
+            //     return <img src={ } alt="image" />
             //     break;
             // case "suresh":
-            //     return <img src={ } alt="yuyu" />
+            //     return <img src={ } alt="image" />
             //     break;
             // case "varnam":
-            //     return <img src={ } alt="yuyu" />
+            //     return <img src={ } alt="image" />
             //     break;
+            default:
+                return <img src={avtar} alt="image" />
+                break;
         }
     }
 
@@ -55,12 +60,12 @@ const Member = () => {
                                             </div>
                                             <div className="name">{cur.name}</div>
                                             <div className="skill">{cur.skill}</div>
-                                            <p>I am an 19-year old front-end developer <b /> based in India.</p>
+                                            <p>{cur.about}</p>
                                             <div className="media_box">
                                                 <ul className="icon">
-                                                    <li><a className='portfolio same_icon' href={`mailto:${cur.email}`} rel="noopener noreferrer"><AttachEmailIcon /></a></li>
                                                     <li><a className='linkedin same_icon' href={cur.LinkedInLink} target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a></li>
                                                     <li><a className='git same_icon' href={cur.git_ytLink} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a></li>
+                                                    <li><a className='email same_icon' href={`mailto:${cur.email}`} rel="noopener noreferrer"><AttachEmailIcon /></a></li>
                                                     <li><a className='insta same_icon' href={cur.instaLink} target="_blank" rel="noopener noreferrer"><InstagramIcon /></a></li>
                                                 </ul>
                                             </div>
