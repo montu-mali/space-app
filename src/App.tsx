@@ -11,6 +11,7 @@ import ParkerProbe from './Component/ParkerProbe/ParkerProbe';
 import SolarF from './Component/SolarF/SolarF';
 import SolarE from './Component/SolarE/SolarE';
 import MultiMedia from './Component/MultiMidiaPage/MultiMedia';
+import Footer from './Component/FooterPage/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="contact" />
             <Route path="*" />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );

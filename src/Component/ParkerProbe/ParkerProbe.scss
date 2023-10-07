@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+   }
+   .parker_box {
+     background-color: black;
+     overflow: hidden;
+     .parkerP {
+       .image_box {
+         // padding: 0 140px;
+         padding-top: 10px;
+         height: 80vh;
+         img {
+           height: 100%;
+           width: 100%;
+         }
+       }
+       .text_box {
+         background-color: white;
+         color: black;
+         padding: 20px 200px;
+         padding-bottom: 40px;
+         h1 {
+           font-family: "Ysabeau SC", sans-serif;
+           margin-bottom: 30px;
+           text-align: center;
+         }
+         .text_content {
+           color: black;
+           display: grid;
+           gap: 20px;
+   
+           img {
+             margin-top: 0 30px;
+             width: 100%;
+             height: 100%;
+           }
+         }
+       }
+     }
+   }
