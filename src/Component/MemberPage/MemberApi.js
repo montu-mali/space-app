@@ -23,10 +23,10 @@ const teamMemberApi = [
         name: "VARNAM SHAH",
         skill: "Content and Communications",
         about:"Strategic content and communications professional, adept at audience engagement and impactful storytelling.",
-        LinkedInLink: "https://www.linkedin.com/in/montu-mali",
-        git_ytLink: "https://github.com/montu-mali",
+        LinkedInLink: "https://www.linkedin.com/in/varnam-shah-4a785624b",
+        git_ytLink: "https://github.com/Varnam2208",
         email: 'vs300822@gmail.com',
-        instaLink: "https://github.com/montu-mali",
+        instaLink: "https://www.instagram.com/i_am_varnam/",
         image: 'varnam'
     },
     {
@@ -34,20 +34,20 @@ const teamMemberApi = [
         skill: "Full-Stack Developers",
         about:"Full-stack developers are tech wizards who master both front-end and back-end skills to create versatile digital solutions.",
         LinkedInLink: "https://www.linkedin.com/in/montu-mali",
-        git_ytLink: "https://github.com/montu-mali",
+        git_ytLink: "https://github.com/vsmm-world",
         email: 'rvpc792@gmail.com',
-        instaLink: "https://github.com/montu-mali",
+        instaLink: "https://www.instagram.com/ravindra_valand/ ",
         image: "ravindra"
     }
     ,
     {
-        name: "SURESH CHAUDHARY",
-        skill: "softewer Devloper",
+        name: "Vraj Patel",
+        skill: "MultiMedia Manager",
         about:"Passionate about stars, galaxies, and cosmic mysteries. Eagerly follows space missions and shares the wonders of the universe.",
-        LinkedInLink: "https://www.linkedin.com/in/impoiler",
-        git_ytLink: "https://github.com/impoiler",
-        email: 'hello@suresh.in',
-        instaLink: "https://www.instagram.com/elision_ims",
+        LinkedInLink: "https://www.linkedin.com/in/vraj-patel-655802294/",
+        git_ytLink: "https://github.com/Vraj9826",
+        email: 'realvraj203@gmail.com',
+        instaLink: "https://instagram.com/_vraj_14_",
         image: "suresh"
     },
     {
