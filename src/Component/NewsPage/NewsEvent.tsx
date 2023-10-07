@@ -85,6 +85,9 @@ const NewsEvent = () => {
           </div>
         </div>
       </div>
+
+
+
     
 
     </>

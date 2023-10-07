@@ -1,11 +1,91 @@
-.image-container{
+/* src/components/Card.css */
+
+/* Base styles for .image-container */
+.image-container {
     display: flex;
     flex-wrap: wrap;
-}
-.media-img{
-
-    height: 50vh;
-    width: auto;
-    // border: 2px solid black;
-    margin: 7vh;
-}
+    justify-content: center; /* Center-align items horizontally */
+  }
+  
+  /* Responsive styles for images */
+  .media-img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Allow images to adjust their height proportionally */
+    margin: 7vh 2vw; /* Adjust margin for spacing between images */
+  
+    /* For tablet screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      margin: 7vh 1vw; /* Adjust margin for tablet screens */
+    }
+  
+    /* For mobile devices (max-width: 576px) */
+    @media (max-width: 576px) {
+      margin: 7vh 0.5vw; /* Adjust margin for mobile screens */
+    }
+  }
+  
+  /* Styles for videos */
+  .videos {
+    margin: 4vh 2vw; /* Adjust margin for spacing between videos */
+    /* padding: 0px 3vh; */ /* You can add padding as needed */
+  
+    /* For tablet screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      margin: 4vh 1vw; /* Adjust margin for tablet screens */
+      /* padding: 0px 2vh; */ /* Adjust padding for tablet screens */
+    }
+  
+    /* For mobile devices (max-width: 576px) */
+    @media (max-width: 576px) {
+      margin: 4vh 0.5vw; /* Adjust margin for mobile screens */
+      /* padding: 0px 1vh; */ /* Adjust padding for mobile screens */
+    }
+  }
+  
+  /* Styles for iframes */
+  .iframe {
+    margin: 0px 3vh; /* Adjust margin for spacing between iframes */
+  
+    /* For tablet screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      margin: 0px 2vh; /* Adjust margin for tablet screens */
+    }
+  
+    /* For mobile devices (max-width: 576px) */
+    @media (max-width: 576px) {
+      margin: 0px 1vh; /* Adjust margin for mobile screens */
+    }
+  }
+  
+  /* Additional styles for .vid and .ttl */
+  .vid {
+    color: green;
+    font-weight: 800;
+    padding: 5vh 5vw; /* Adjust padding for spacing */
+  
+    /* For tablet screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      padding: 5vh 2vw; /* Adjust padding for tablet screens */
+    }
+  
+    /* For mobile devices (max-width: 576px) */
+    @media (max-width: 576px) {
+      padding: 5vh 1vw; /* Adjust padding for mobile screens */
+    }
+  }
+  
+  .ttl {
+    padding: 0px 5vh; /* Adjust padding for spacing */
+    color: grey;
+  
+    /* For tablet screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      padding: 0px 2vw; /* Adjust padding for tablet screens */
+    }
+  
+    /* For mobile devices (max-width: 576px) */
+    @media (max-width: 576px) {
+      padding: 0px 1vw; /* Adjust padding for mobile screens */
+    }
+  }
+  

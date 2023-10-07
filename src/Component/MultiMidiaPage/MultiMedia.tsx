@@ -5,59 +5,29 @@ import './MeltiMedia.scss'
 
 const MultiMedia = () => {
   return (
-    <div>
-      <h1>Solar Parkour Probes and Space Exploration Multimedia</h1>
+    <>
+    <h2 className="vid">
+      Videos Gallary :
+    </h2>
+    <h3 className="ttl">
+      Some Videos About to Specific topic HelioPhysics and Solar Parker Probe
+    </h3>
 
-      <h2>Images</h2>
-      <div className="image-container flx">
-        <img
-          src={solarE}
-          alt="Solar Probe 1"
-          className="media-img"
-        />
-       <img
-          src={solarE}
-          alt="Solar Probe 1"
-          className="media-img"
-        />
-           <img
-          src={solarE}
-          alt="Solar Probe 1"
-          className="media-img"
-        />
-           <img
-          src={solarE}
-          alt="Solar Probe 1"
-          className="media-img"
-        />
-        {/* Add more image elements here */}
-      </div>
-
-      <h2>Videos</h2>
-      <div className="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID_1"
-          title="Solar Probe Video 1"
-        
-          allow="autoplay; encrypted-media"
-         
-          className="media-item"
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID_2"
-          title="Solar Probe Video 2"
-          
-          allow="autoplay; encrypted-media"
-         
-          className="media-item"
-        ></iframe>
-        {/* Add more video elements here */}
-      </div>
+    <div className="videos">
+    <iframe className="iframe" width="560" height="315" src="https://www.youtube.com/embed/LkaLfbuB_6E?si=8KaNElULuuBLz5zy" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+    <iframe className="iframe" width="560" height="315" src="https://www.youtube.com/embed/RT9laVHZZQo?si=hgermcTuPpJfNG8T" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
     </div>
+    <div className="videos">
+    <iframe className="iframe" width="560" height="315" src="https://www.youtube.com/embed/W5RxRc5xIwQ?si=xUC4K0fB3vCiSR1m" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+    <iframe className="iframe" width="560" height="315" src="https://www.youtube.com/embed/pOZhPz92Dic?si=RvAJzK23sEC2gOTu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+    </div>
+
+    <h2 className="vid">Image Gallary:</h2>
+    <h3 className="ttl">
+      Some Image Content About to Specific topic HelioPhysics and Solar Parker Probe
+    </h3>
+    </>
+ 
   );
 };
 

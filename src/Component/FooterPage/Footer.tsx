@@ -125,7 +125,7 @@ const Footer = () => {
                 </span>
               </div>
               <div className="Powered">
-                <span>Powered by : Team Celestial Coder</span>
+                <span>Created By : Team Celestial Coder</span>
               </div>
             </div>
           </div>
