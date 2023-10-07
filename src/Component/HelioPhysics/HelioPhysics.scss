@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+}
+.heliop_box {
+  overflow: hidden;
+  .heliop {
+    padding: 10px 120px;
+    .image_box {
+      height: 80vh;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
