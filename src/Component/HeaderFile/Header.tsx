@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
 import viewspace from "../../assets/viewspace.jpg";
 import logo from "../../assets/logo.png";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 const Header = () => {
+  const [navBar, setNavBar] = useState(false);
+  console.log(navBar);
   return (
     <>
       <header>
@@ -15,7 +19,7 @@ const Header = () => {
             </Link>
           </div>
           {/* <NavLink to=''></NavLink> */}
-          <div className="navbar-box">
+          <div className={navBar ? "mobile_nav navbar-box " : "navbar-box "}>
             <div className="navbar">
               <ul>
                 <li>
@@ -33,10 +37,10 @@ const Header = () => {
                   <div className="dropdown">
                     <div className="dropdown-content">
                       <NavLink className="navLink" to="heliophysics">
-                      Heliophysics
+                        Heliophysics
                       </NavLink>
                       <NavLink className="navLink" to="parker-probe">
-                      ParkerProbe
+                        ParkerProbe
                       </NavLink>
                       <div className="navLink dropdown2">
                         Solar Maximum
@@ -60,6 +64,12 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+            <div className="cross">
+              <CloseRoundedIcon className="cross_icon" onClick={() => setNavBar(false)} />
+            </div>
+          </div>
+          <div className="nav_bar">
+            <MenuRoundedIcon onClick={() => setNavBar(true)} />
           </div>
         </div>
       </header>
