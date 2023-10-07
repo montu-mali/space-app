@@ -3,10 +3,10 @@ const teamMemberApi = [
         name: "DHRUMIL PRAJAPATI",
         skill: "Astronomy and Space enthusiast",
         about:"Passionate about stars, galaxies, and cosmic mysteries. Eagerly follows space missions and shares the wonders of the universe.",
-        LinkedInLink: "https://www.linkedin.com/in/montu-mali",
-        git_ytLink: "https://github.com/montu-mali",
+        LinkedInLink: "https://www.linkedin.com/in/dhrumil-prajapati-38145726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        git_ytLink: "https://github.com/DhrumilPrajapati03",
         email: 'prajapatidhrumil3103@gamil.com',
-        instaLink: "https://www.instagram.com/k__montu.07",
+        instaLink: "https://instagram.com/dhrumil__0310?igshid=OGQ5ZDc2ODk2ZA",
         "image": "dhrumil"
     },
     {

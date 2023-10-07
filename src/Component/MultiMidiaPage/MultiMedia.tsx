@@ -1,4 +1,7 @@
 import React from 'react';
+import solarE from "../../assets/multimedia/solarE.jpg";
+import './MeltiMedia.scss'
+
 
 const MultiMedia = () => {
   return (
@@ -6,16 +9,26 @@ const MultiMedia = () => {
       <h1>Solar Parkour Probes and Space Exploration Multimedia</h1>
 
       <h2>Images</h2>
-      <div className="image-container">
+      <div className="image-container flx">
         <img
-          src="image1.jpg"
+          src={solarE}
           alt="Solar Probe 1"
-          className="media-item"
+          className="media-img"
         />
-        <img
-          src="image2.jpg"
-          alt="Solar Probe 2"
-          className="media-item"
+       <img
+          src={solarE}
+          alt="Solar Probe 1"
+          className="media-img"
+        />
+           <img
+          src={solarE}
+          alt="Solar Probe 1"
+          className="media-img"
+        />
+           <img
+          src={solarE}
+          alt="Solar Probe 1"
+          className="media-img"
         />
         {/* Add more image elements here */}
       </div>
