@@ -11,7 +11,6 @@ body {
   padding: 0px 20px;
   color: white;
   box-shadow: 2px 2px 2px rgb(73, 72, 72);
-  // position: sticky;
 
   .logo {
     display: flex;
@@ -24,6 +23,9 @@ body {
       width: 70px;
       height: 60px;
     }
+  }
+  .mobile_nav {
+    display: none;
   }
 
   .navbar-box {
@@ -100,6 +102,117 @@ body {
 
         li:hover {
           color: red;
+        }
+      }
+    }
+    .cross {
+      display: none;
+    }
+  }
+  .nav_bar {
+    padding: auto;
+    display: none;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-box {
+    .navbar-box {
+      .navbar {
+        ul {
+          display: none;
+        }
+      }
+    }
+    .nav_bar {
+      padding: auto;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .mobile_nav {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      background-color: rgb(49, 45, 45);
+      padding: 20px;
+      border-radius: 5px;
+      min-width: 300px;
+      .navbar {
+        ul {
+          display: grid;
+          gap: 10px;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          padding-top: 10px;
+
+          li {
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 20px;
+
+            .navLink {
+              text-decoration: none;
+              color: white;
+              font-size: 20px;
+              font-weight: 600;
+              cursor: pointer;
+            }
+          }
+          .dropdown-box {
+            position: relative;
+            display: inline-block;
+
+            .dropdown {
+              .dropdown-content {
+                background-color: rgb(43, 41, 41);
+                position: relative;
+                color: white;
+                a {
+                  color: white;
+                }
+                .dropdown2 {
+                  display: grid;
+                  display: none;
+                  position: relative;
+                  background-color: white;
+                  .dropdown21 {
+                  }
+                }
+                .dropdown21 {
+                  display: none;
+                  position: relative;
+                  .dropdown21 {
+                    position: absolute;
+                    display: inline-block;
+                    margin-left: 50px;
+                  }
+                }
+                .dropdown2:hover {
+                  .dropdown21 {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+          .dropdown-box:hover .dropdown-content {
+            display: block;
+          }
+        }
+      }
+      .cross {
+        // background-color: white;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .cross_icon {
+          // color: black;
         }
       }
     }
