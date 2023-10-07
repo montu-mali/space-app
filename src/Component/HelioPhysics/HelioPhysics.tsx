@@ -2,7 +2,7 @@ import React from 'react'
 
 const HelioPhysics = () => {
   return (
-    <div>HelioPhysics vcvxcdv</div>
+    <div>HelioPhysics vcvxcdjhjhjv</div>
   )
 }
 
