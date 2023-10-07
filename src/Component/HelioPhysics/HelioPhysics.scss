@@ -1,15 +1,15 @@
 body {
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .heliop_box {
   background-color: black;
   overflow: hidden;
   .heliop {
     .image_box {
-      // padding: 0 140px;
+      padding: 0 140px;
       padding-top: 10px;
-      height: 100vh;
+      height: 80vh;
       img {
         height: 100%;
         width: 100%;
@@ -35,6 +35,70 @@ body {
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+}
+@media (max-width: 998px) {
+  .heliop_box {
+    .heliop {
+      .image_box {
+        padding: 0 140px;
+        padding-top: 10px;
+        height: 60vh;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .text_box {
+        background-color: white;
+        color: black;
+        padding: 20px 50px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .heliop_box {
+    .heliop {
+      .image_box {
+        padding: 0 80px;
+        padding-top: 10px;
+        height: 60vh;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .text_box {
+        background-color: white;
+        color: black;
+        padding: 20px 40px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .heliop_box {
+    .heliop {
+      .image_box {
+        padding: 0 20px;
+        padding-top: 10px;
+        height: 50vh;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .text_box {
+        background-color: white;
+        color: black;
+        padding: 20px 20px;
+        padding-bottom: 40px;
       }
     }
   }
