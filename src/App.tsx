@@ -26,14 +26,11 @@ function App() {
             <Route path="/news-event" Component={NewsEvent} />
             <Route path="/heliophysics" Component={HelioPhysics} />
             <Route path="/parker-probe" Component={ParkerProbe} />
-            <Route path="/solar-flares" Component={HelioPhysics} />
-            <Route path="/solar-eclips" Component={ParkerProbe} />
+            <Route path="/solar-flares" Component={SolarF} />
+            <Route path="/solar-eclips" Component={SolarE} />
             <Route path="/multi-media" Component={MultiMedia} />
             <Route path="/add-blog" Component={AddBlog} />
             <Route path="/blog-details" Component={MoreBlog} />
-            
-
-           
             <Route path="contact" />
             <Route path="*" />
         </Routes>

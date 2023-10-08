@@ -48,7 +48,7 @@ const teamMemberApi = [
         git_ytLink: "https://github.com/Vraj9826",
         email: 'realvraj203@gmail.com',
         instaLink: "https://instagram.com/_vraj_14_",
-        image: "suresh"
+        image: "vraj"
     },
     {
         name: "GAURANG",

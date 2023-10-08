@@ -8,7 +8,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import teamData from './MemberApi'
 import montu from "../../assets/montu.jpg"
 import dhrumil from "../../assets/dhrumil.jpg"
+import varnam from "../../assets/varnam.jpg"
 import ravindra from "../../assets/ravindra.jpg"
+import vraj from "../../assets/vraj.jpg"
+import gaurang from "../../assets/gaurang.jpg"
 import avtar from "../../assets/avtar.jpg"
 
 
@@ -25,15 +28,15 @@ const Member = () => {
             case "ravindra":
                 return <img src={ravindra} alt="image" />
                 break;
-            // case "gaurang":
-            //     return <img src={ } alt="image" />
-            //     break;
-            // case "suresh":
-            //     return <img src={ } alt="image" />
-            //     break;
-            // case "varnam":
-            //     return <img src={ } alt="image" />
-            //     break;
+            case "gaurang":
+                return <img src={gaurang} alt="image" />
+                break;
+            case "vraj":
+                return <img src={vraj} alt="image" />
+                break;
+            case "varnam":
+                return <img src={varnam} alt="image" />
+                break;
             default:
                 return <img src={avtar} alt="image" />
                 break;

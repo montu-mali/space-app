@@ -16,7 +16,7 @@ const Home = () => {
             </div>
             <div className="overview">
                 <h2>Over View</h2>
-                <p>ViewSpace is a free, web-based collection of digital interactives and videos highlighting the latest developments in astronomy and Earth science.</p>
+                <p>please make sure , your internet is connected :)</p>
                 <div className="video-box">
                 <iframe  className="video" src="https://www.youtube.com/embed/jR6wA0qv5NA?si=Sdz8BRVVEASWr5Nx" title="YouTube video player" allowFullScreen  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                 </div>
