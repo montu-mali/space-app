@@ -1,139 +1,192 @@
 .team_box {
+  background-color: rgb(236, 234, 234);
+
+  .team {
+    text-align: center;
+    padding: 60px;
+
+    .centent_box {
+      text-align: center;
+
+      .button {
+        padding: 1px 12px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(4, 33, 192);
+        border-radius: 20px;
+        border: 2px solid rgb(4, 33, 192);
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin-top: 25px;
+        font-family: "Titillium Web", sans-serif;
+      }
+
+      p {
+        margin-top: 15px;
+        padding: 0 100px;
+        font-family: "Ysabeau SC", sans-serif;
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+    .team_member {
+      margin-top: 35px;
+
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+
+        .member {
+          padding: 20px;
+          min-width: 250px;
+          max-width: 280px;
+          display: grid;
+          text-align: center;
+          box-shadow: 5px 5px 5px rgb(90, 84, 84);
+          background-color: white;
+          border-radius: 10px;
+
+          .image {
+            margin: 0 auto;
+            box-sizing: border-box;
+
+            img {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              // border: 2px blue double;
+              object-fit: cover;
+            }
+          }
+
+          .name {
+            font-weight: 700;
+            margin-top: 15px;
+          }
+
+          .skill {
+            color: blue;
+            font-weight: 600;
+            margin-top: 5px;
+          }
+          p {
+            margin-top: 20px;
+            font-family: "Ysabeau SC", sans-serif;
+            color: black;
+          }
+
+          .media_box {
+            margin-top: 30px;
+
+            ul {
+              padding: 10px;
+              display: flex;
+              justify-content: space-evenly;
+              list-style: none;
+
+              li {
+                padding: 0;
+                margin: 0;
+
+                .email {
+                  color: rgb(40, 96, 248);
+                }
+                .email:hover {
+                  color: rgb(228, 55, 55);
+                }
+
+                .linkedin {
+                  color: blue;
+                }
+                .linkedin:hover {
+                  color: rgb(115, 115, 240);
+                }
+
+                .git {
+                  color: black;
+                }
+                .git:hover {
+                  color: rgb(66, 64, 64);
+                }
+
+                .insta {
+                  color: orangered;
+                }
+                .insta:hover {
+                  color: rgb(236, 151, 121);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:1000px) {
+  .team_box {
     background-color: rgb(236, 234, 234);
 
     .team {
-        text-align: center;
-        padding: 60px;
+      text-align: center;
+      padding: 20px;
 
-        .centent_box {
-            text-align: center;
-
-            .button {
-                padding: 1px 12px;
-                font-size: 20px;
-                font-weight: 600;
-                color: rgb(4, 33, 192);
-                border-radius: 20px;
-                border: 2px solid rgb(4, 33, 192);
-                width: fit-content;
-                margin: 0 auto;
-            }
-
-            h1 {
-                margin-top: 25px;
-                font-family: 'Titillium Web', sans-serif;
-            }
-
-            p {
-                margin-top: 15px;
-                padding: 0 100px;
-                font-family: 'Ysabeau SC', sans-serif;
-                color: black;
-                font-weight: 600;
-                
-            }
-        }
-
-        .team_member {
-            margin-top: 35px;
-
-            .members {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                text-align: center;
-                justify-content: center;
-
-                .member {
-                    padding: 20px;
-                    min-width: 250px;
-                    max-width: 280px;
-                    display: grid;
-                    text-align: center;
-                    box-shadow: 5px 5px 5px rgb(90, 84, 84);
-                    background-color: white;
-                    border-radius: 10px;
-
-
-                    .image {
-
-                        margin: 0 auto;
-                        box-sizing: border-box;
-
-                        img {
-                            width: 80px;
-                            height: 80px;
-                            border-radius: 50%;
-                            // border: 2px blue double;
-                            object-fit: cover;
-
-                        }
-                    }
-
-                    .name {
-                        font-weight: 700;
-                        margin-top: 15px;
-                    }
-
-                    .skill {
-                        color: blue;
-                        font-weight: 600;
-                        margin-top: 5px;
-                    }
-                    p{
-                        margin-top: 20px;
-                        font-family: 'Ysabeau SC', sans-serif;
-                        color: black;
-                    }
-
-                    .media_box {
-                        margin-top: 30px;
-
-                        ul {
-                            padding: 10px;
-                            display: flex;
-                            justify-content:space-evenly;
-                            list-style: none;
-
-                            li {
-                                padding: 0;
-                                margin: 0;
-                               
-
-                                .email {
-                                    color: rgb(40, 96, 248);
-                                }
-                                .email:hover {
-                                    color:rgb(228, 55, 55);
-                                  
-                                }
-
-                                .linkedin {
-                                    color: blue;
-                                }
-                                .linkedin:hover {
-                                    color: rgb(115, 115, 240);
-                                }
-
-                                .git {
-                                    color: black;
-                                }
-                                .git:hover {
-                                    color: rgb(66, 64, 64);
-                                }
-
-                                .insta {
-                                    color: orangered;
-                                }
-                                .insta:hover {
-                                    color: rgb(236, 151, 121);
-                                }
-                                
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      .centent_box {
+        h1 {
+            margin-top: 25px;
+          }
+    
+          p {
+            padding: 0 60px;
+            
+          }
+      }
     }
+  }
 }
+@media (max-width:700px) {
+    .team_box {
+      background-color: rgb(236, 234, 234);
+  
+      .team {
+        text-align: center;
+        padding: 20px;
+  
+        .centent_box {
+          h1 {
+              margin-top: 25px;
+            }
+      
+            p {
+              padding: 0 30px;
+              
+            }
+        }
+      }
+    }
+  }
+  @media (max-width:480px) {
+    .team_box {
+  
+      .team {
+  
+        .centent_box {
+          h1 {
+              margin-top: 25px;
+            }
+      
+            p {
+              padding: 0 10px;
+              
+            }
+        }
+      }
+    }
+  }

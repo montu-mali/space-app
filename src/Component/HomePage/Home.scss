@@ -1,65 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Space+Grotesk&family=Titillium+Web:wght@300&family=Ysabeau+Infant:wght@300&family=Ysabeau+Office:wght@300&family=Ysabeau+SC:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Space+Grotesk&family=Titillium+Web:wght@300&family=Ysabeau+Infant:wght@300&family=Ysabeau+Office:wght@300&family=Ysabeau+SC:wght@300&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    // background: #fbfbfb;
+  padding: 0;
+  margin: 0;
+  // background: #fbfbfb;
 }
 
 .home-box {
-    .intro {
-        background-color: white;
-        height: 100vh;
-        background-size: cover;
-        // box-shadow: 0px 10px 10px rgb(66, 64, 64) inset;
-        background-image: url(https://wallpapercave.com/wp/jt9J2jg.jpg);
+  .intro {
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    // box-shadow: 0px 10px 10px rgb(66, 64, 64) inset;
+    background-image: url(https://wallpapercave.com/wp/jt9J2jg.jpg);
 
-        .intro-box {
-            color: white;
+    .intro-box {
+      color: white;
 
-            .content {
-                text-align: center;
-
-                h1 {
-                    font-size: 50px;
-                    padding: 0;
-                    margin: 0;
-                    //   font-weight: 600;
-                    padding-top: 20px;
-                    font-family: 'Ysabeau SC', sans-serif;
-                }
-
-                p {
-                    font-size: 22px;
-                    font-weight: 700;
-                    margin-top: 20px;
-                    font-family: 'Titillium Web', sans-serif;
-                }
-            }
-        }
-    }
-
-    .overview {
-        // background-color: rgb(255, 251, 251);
+      .content {
         text-align: center;
-        color: white;
-        padding: 30px 70px;
 
-        h2 {
-            font-family: 'Ysabeau SC', sans-serif;
-            font-size: 30px;
+        h1 {
+          font-size: 50px;
+          padding: 0;
+          margin: 0;
+          //   font-weight: 600;
+          padding-top: 20px;
+          font-family: "Ysabeau SC", sans-serif;
         }
 
         p {
-            font-size: 18px;
-            font-family: 'Titillium Web', sans-serif;
-            margin-top: 20px;
-            font-weight: 600;
+          font-size: 22px;
+          font-weight: 700;
+          margin-top: 20px;
+          font-family: "Titillium Web", sans-serif;
         }
-
-        video {
-            margin-top: 50px;
-            width: 80%;
-        }
+      }
     }
+  }
+
+  .overview {
+    text-align: center;
+    color: white;
+    padding: 30px 70px;
+    background-color: black;
+
+    h2 {
+      font-family: "Ysabeau SC", sans-serif;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Titillium Web", sans-serif;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    video {
+      margin-top: 20px;
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .home-box {
+    .overview {
+      text-align: center;
+      color: white;
+      padding: 30px 50px;
+      background-color: black;
+
+      video {
+        margin-top: 20px;
+        width: 90%;
+      }
+    }
+  }
 }
