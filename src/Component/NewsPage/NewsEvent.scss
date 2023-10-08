@@ -1,7 +1,7 @@
 /* src/components/Card.css */
 .card {
   width: 18rem;
-  padding: 5px 5vh;
+  padding: 5px 3vh;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   overflow: hidden;
@@ -9,6 +9,11 @@
   margin: 10px;
   display: inline-block;
   vertical-align: top;
+  overflow: hidden;
+}
+.crds{
+
+  padding-left: vh;
 }
 
 /* Responsive images */
@@ -59,6 +64,7 @@
   .card {
     width: 100%; /* Adjust width for tablet screens */
     padding: 10px; /* Adjust padding for tablet screens */
+    margin: 10px 0; /* Add space between stacked cards */
   }
 
   .card-title {
@@ -84,10 +90,16 @@
   .btn {
     text-align: center; /* Center-align button for mobile devices */
   }
+  .crds{
+    // padding-left: 1vh;
+  }
+  
 }
 
 /* Additional media queries and responsive styles can be added as needed */
 .flx {
   display: flex;
-  margin: 5vh 20vh;
+  flex-wrap: wrap; /* Add this to make cards wrap to the next line */
+  margin: 5vh 10vh;
+  
 }
