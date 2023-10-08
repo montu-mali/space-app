@@ -12,12 +12,8 @@ import SolarF from './Component/SolarF/SolarF';
 import SolarE from './Component/SolarE/SolarE';
 import MultiMedia from './Component/MultiMidiaPage/MultiMedia';
 import Footer from './Component/FooterPage/Footer';
-<<<<<<< HEAD
-import Trial from './Component/Trial/Trial';
-=======
 import Blog from './Component/BlogPG/Blog';
 import AddBlog from './Component/BlogPG/AddBlog';
->>>>>>> 501ecb5f0175c9da3136f1e226ae091890a1a719
 
 function App() {
   return (
@@ -32,13 +28,9 @@ function App() {
             <Route path="/solar-flares" Component={HelioPhysics} />
             <Route path="/solar-eclips" Component={ParkerProbe} />
             <Route path="/multi-media" Component={MultiMedia} />
-<<<<<<< HEAD
-            <Route path="/try" Component={Trial} />
-=======
             <Route path="/add-blog" Component={AddBlog} />
             
 
->>>>>>> 501ecb5f0175c9da3136f1e226ae091890a1a719
            
             <Route path="contact" />
             <Route path="*" />
