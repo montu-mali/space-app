@@ -42,8 +42,6 @@ const AddBlog = () => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  console.log(form);
-
   const formSubmit = (e: any) => {
     e.preventDefault();
     // addAddress(addressDtl)
@@ -55,7 +53,7 @@ const AddBlog = () => {
     formdata.append("title", form.title);
     formdata.append("content", form.content);
 
-    var requestOptions = {
+    const requestOptions = {
       method: "POST",
       body: formdata,
     };
@@ -65,10 +63,14 @@ const AddBlog = () => {
       requestOptions
     )
       .then((response) => response.json())
-      .then((result) => console.log(result))
-      .catch((error) => console.log("error", error));
-
-    setAddBtn(true);
+      .then((result) => {
+        alert("Success!");
+        console.log(result);
+      })
+      .catch((error) => console.log("error", error))
+      .finally(() => {
+        setAddBtn(true);
+      });
   };
 
   const addButton = () => {
