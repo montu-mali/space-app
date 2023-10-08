@@ -1,0 +1,97 @@
+.detail_box {
+  .detail {
+    padding: 40px 100px;
+    display: grid;
+    .name {
+      h3 {
+        color: gray;
+      }
+    }
+    .title {
+      h1 {
+        margin: 20px 0;
+        font-family: "Ysabeau SC", sans-serif;
+      }
+    }
+    .image {
+      height: 50vh;
+      width: fit-content;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .content {
+      p {
+        margin: 20px 0;
+        font-family: 'Titillium Web', sans-serif;
+      }
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .detail_box {
+    .detail {
+      padding: 40px 60px;
+      display: grid;
+      .image {
+        height: 50vh;
+        width: fit-content;
+    } 
+    }
+    
+  }
+}
+@media (max-width: 800px) {
+    .detail_box {
+      .detail {
+        padding: 40px 40px;
+        display: grid;
+        .image {
+          height: 50vh;
+          width: fit-content;
+      } 
+      .name {
+        h3 {
+          color: gray;
+          font-size: 15px;
+        }
+      }
+      .title {
+        h1 {
+          margin: 15px 0;
+          font-size: 20px;
+        }
+      }
+      }
+      
+    }
+  }
+
+  @media (max-width: 480px) {
+    .detail_box {
+      .detail {
+        padding: 40px 10px;
+        display: grid;
+        .image {
+          height: 50vh;
+          width: fit-content;
+      } 
+      .title {
+        h1 {
+          margin: 10px 0;
+          font-size: 15px;
+        }
+      }
+      .name {
+        h3 {
+          color: gray;
+          font-size: 12px;
+        }
+      }
+      
+      }
+      
+    }
+  }

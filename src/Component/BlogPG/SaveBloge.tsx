@@ -51,7 +51,6 @@ export const SaveBloge = () => {
                       <p>{cur.title}</p>
                       <div className="more_button" onClick={()=>gOToAbout(cur.id)}>
                           <NavLink className="button" to="blog-details"><span>more<ArrowOutwardRoundedIcon className="arrow"/></span></NavLink>
-                          
                       </div>
                     </div>
                   );
