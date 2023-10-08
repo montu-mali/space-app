@@ -12,6 +12,8 @@ import SolarF from './Component/SolarF/SolarF';
 import SolarE from './Component/SolarE/SolarE';
 import MultiMedia from './Component/MultiMidiaPage/MultiMedia';
 import Footer from './Component/FooterPage/Footer';
+import Blog from './Component/BlogPG/Blog';
+import AddBlog from './Component/BlogPG/AddBlog';
 
 function App() {
   return (
@@ -23,9 +25,12 @@ function App() {
             <Route path="/news-event" Component={NewsEvent} />
             <Route path="/heliophysics" Component={HelioPhysics} />
             <Route path="/parker-probe" Component={ParkerProbe} />
-            <Route path="/solar-flares" Component={SolarF} />
-            <Route path="/solar-eclips" Component={SolarE} />
+            <Route path="/solar-flares" Component={HelioPhysics} />
+            <Route path="/solar-eclips" Component={ParkerProbe} />
             <Route path="/multi-media" Component={MultiMedia} />
+            <Route path="/add-blog" Component={AddBlog} />
+            
+
            
             <Route path="contact" />
             <Route path="*" />
