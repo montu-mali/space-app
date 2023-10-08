@@ -5,10 +5,23 @@ import AddIcon from "@mui/icons-material/Add";
 import { SaveBloge } from "./SaveBloge";
 // import { useAddressStore } from "../store/cartStore";
 
+interface input {
+  name: string;
+  email: string;
+  title: string;
+  content: string;
+  image: null | File;
+}
+
 const AddBlog = () => {
   const [addBtn, setAddBtn] = useState(true);
-
-  const [allData, setAllData] = useState([]);
+  const [form, setValues] = useState<input>({
+    name: "",
+    email: "",
+    title: "",
+    content: "",
+    image: null,
+  });
 
   // const { address, addAddress, removeAddress } = useAddressStore((state) => state)
 
@@ -23,9 +36,37 @@ const AddBlog = () => {
   //   });
   // };
 
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  console.log(form);
+
   const formSubmit = (e: any) => {
     e.preventDefault();
     // addAddress(addressDtl)
+
+    const formdata = new FormData();
+    formdata.append("image", form.image || "");
+    formdata.append("name", form.name);
+    formdata.append("email", form.email);
+    formdata.append("title", form.title);
+    formdata.append("content", form.content);
+
+    var requestOptions = {
+      method: "POST",
+      body: formdata,
+    };
+
+    fetch(
+      "https://albany-bandicoot-esma.1.ie-1.fl0.io/api/v1/post/create",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
 
     setAddBtn(true);
   };
@@ -71,6 +112,7 @@ const AddBlog = () => {
                               type="text"
                               required
                               name="name"
+                              onChange={handleChange}
                               // value={addressDtl.name}
                               // onChange={addEvent}
                             />
@@ -85,7 +127,8 @@ const AddBlog = () => {
                             <input
                               type="email"
                               required
-                              name="number"
+                              name="email"
+                              onChange={handleChange}
                               // value={addressDtl.number}
                               // onChange={addEvent}
                             />
@@ -100,7 +143,8 @@ const AddBlog = () => {
                           <input
                             type="text"
                             required
-                            name="houseNo"
+                            name="title"
+                            onChange={handleChange}
                             // value={addressDtl.houseNo}
                             // onChange={addEvent}
                           />
@@ -111,8 +155,9 @@ const AddBlog = () => {
                           </label>
                           <textarea
                             className="text_area"
-                            name=""
+                            name="content"
                             id=""
+                            onChange={handleChange}
                           ></textarea>
                         </div>
                         <div className=" input-box">
@@ -124,7 +169,14 @@ const AddBlog = () => {
                             type="file"
                             required
                             accept="image/png, image/jpeg"
-                          ></input>
+                            onChange={(e) => {
+                              setValues((prev) => ({
+                                ...prev,
+                                image:
+                                  e.target.files && (e.target.files[0] as any),
+                              }));
+                            }}
+                          />
                         </div>
 
                         <div className="two-button">
@@ -183,7 +235,7 @@ const AddBlog = () => {
           </div>
         </div>
       </div>
-      <SaveBloge/>
+      <SaveBloge />
     </>
   );
 };
