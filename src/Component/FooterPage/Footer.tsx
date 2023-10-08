@@ -91,7 +91,7 @@ const Footer = () => {
               <div className="contect-box">
                 <ul>
                   <li>
-                    <Link to="">
+                    <Link to="/try">
                       <FacebookTwoToneIcon className="facebook icon" />
                     </Link>
                   </li>

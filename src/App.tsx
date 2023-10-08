@@ -12,6 +12,7 @@ import SolarF from './Component/SolarF/SolarF';
 import SolarE from './Component/SolarE/SolarE';
 import MultiMedia from './Component/MultiMidiaPage/MultiMedia';
 import Footer from './Component/FooterPage/Footer';
+import Trial from './Component/Trial/Trial';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/solar-flares" Component={SolarF} />
             <Route path="/solar-eclips" Component={SolarE} />
             <Route path="/multi-media" Component={MultiMedia} />
+            <Route path="/try" Component={Trial} />
            
             <Route path="contact" />
             <Route path="*" />

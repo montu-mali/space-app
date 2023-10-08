@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
 import viewspace from "../../assets/viewspace.jpg";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo 1.png";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 

@@ -12,29 +12,15 @@
     height: 100vh;
     background-size: cover;
     // box-shadow: 0px 10px 10px rgb(66, 64, 64) inset;
-    background-image: url(https://wallpapercave.com/wp/jt9J2jg.jpg);
+    // background-image: url('../../assets/home\ page\ 2.png');
 
     .intro-box {
       color: white;
+      overflow: hidden;
 
-      .content {
-        text-align: center;
-
-        h1 {
-          font-size: 50px;
-          padding: 0;
-          margin: 0;
-          //   font-weight: 600;
-          padding-top: 20px;
-          font-family: "Ysabeau SC", sans-serif;
-        }
-
-        p {
-          font-size: 22px;
-          font-weight: 700;
-          margin-top: 20px;
-          font-family: "Titillium Web", sans-serif;
-        }
+      img{
+        width: 100vw;
+        height:100vh;
       }
     }
   }
@@ -57,7 +43,7 @@
       font-weight: 600;
     }
 
-    video {
+    .video {
       margin-top: 20px;
       width: 80%;
     }

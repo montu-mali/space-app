@@ -5,13 +5,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center-align items horizontally */
+    // margin-left: 10vh;
   }
   
   /* Responsive styles for images */
   .media-img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Allow images to adjust their height proportionally */
-    margin: 7vh 2vw; /* Adjust margin for spacing between images */
+    // max-width: 100%; /* Make images responsive */
+    height:30vh ; /* Allow images to adjust their height proportionally */
+    margin: 3vh 2vh; /* Adjust margin for spacing between images */
   
     /* For tablet screens (max-width: 768px) */
     @media (max-width: 768px) {
@@ -61,6 +62,7 @@
   .vid {
     color: green;
     font-weight: 800;
+    text-align: center;
     padding: 5vh 5vw; /* Adjust padding for spacing */
   
     /* For tablet screens (max-width: 768px) */
