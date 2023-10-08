@@ -14,6 +14,7 @@ import MultiMedia from './Component/MultiMidiaPage/MultiMedia';
 import Footer from './Component/FooterPage/Footer';
 import Blog from './Component/BlogPG/Blog';
 import AddBlog from './Component/BlogPG/AddBlog';
+import MoreBlog from './Component/BlogPG/MoreBlog';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/solar-eclips" Component={ParkerProbe} />
             <Route path="/multi-media" Component={MultiMedia} />
             <Route path="/add-blog" Component={AddBlog} />
+            <Route path="/blog-details" Component={MoreBlog} />
             
 
            

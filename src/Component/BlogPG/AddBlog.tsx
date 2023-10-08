@@ -15,6 +15,7 @@ interface input {
 
 const AddBlog = () => {
   const [addBtn, setAddBtn] = useState(true);
+
   const [form, setValues] = useState<input>({
     name: "",
     email: "",
@@ -23,18 +24,7 @@ const AddBlog = () => {
     image: null,
   });
 
-  // const { address, addAddress, removeAddress } = useAddressStore((state) => state)
-
-  // const addEvent = (e: any) => {
-  //   const { name, value } = e.target;
-
-  //   setAddressDtl((old) => {
-  //     return {
-  //       ...old,
-  //       [name]: value,
-  //     };
-  //   });
-  // };
+ 
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
