@@ -20,8 +20,8 @@ const Header = () => {
           </div>
           {/* <NavLink to=''></NavLink> */}
           <div className={navBar ? "mobile_nav navbar-box " : "navbar-box "}>
-            <div className="navbar">
-              <ul>
+            <div className="navbar" onClick={() => setNavBar(false)}>
+              <ul >
                 <li>
                   <NavLink className="navLink" to="/">
                     Home
