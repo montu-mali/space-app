@@ -1,0 +1,103 @@
+.SaveB_box {
+  background-color: rgba(247, 247, 247, 0.705);
+  height: 50vh;
+
+  .team {
+    text-align: center;
+    padding: 60px;
+
+    .centent_box {
+      text-align: center;
+
+      .button {
+        padding: 1px 12px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(4, 33, 192);
+        border-radius: 20px;
+        border: 2px solid rgb(4, 33, 192);
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin-top: 25px;
+        font-family: "Titillium Web", sans-serif;
+      }
+
+      p {
+        margin-top: 15px;
+        padding: 0 100px;
+        font-family: "Ysabeau SC", sans-serif;
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+    .team_member {
+      margin-top: 35px;
+
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+
+        .member {
+          padding: 20px;
+          min-width: 250px;
+          max-width: 280px;
+          display: grid;
+          text-align: center;
+          box-shadow: 5px 5px 5px rgb(90, 84, 84);
+          background-color: white;
+          border-radius: 10px;
+
+          .image {
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 100%;
+            height: 120px;
+
+            img {
+              height: 100%;
+              width: 100%;
+              // border: 2px blue double;
+              object-fit: cover;
+            }
+          }
+
+          .name {
+            font-weight: 400;
+            margin-top: 15px;
+          }
+          p {
+            margin-top: 10px;
+            font-family: "Ysabeau SC", sans-serif;
+            color: black;
+            font-weight: 700;
+          }
+          .more_button {
+            text-align: end;
+            margin-top: 20px;
+            .button {
+              text-decoration: none;
+              span {
+                color: rgb(12, 130, 181);
+                cursor: pointer;
+                .arrow {
+                  color: rgb(12, 130, 181);
+                  margin: 0;
+                  padding: 0;
+                  font-size: 15px;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

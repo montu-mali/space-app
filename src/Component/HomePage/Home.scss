@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Space+Grotesk&family=Titillium+Web:wght@300&family=Ysabeau+Infant:wght@300&family=Ysabeau+Office:wght@300&family=Ysabeau+SC:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  // background: #fbfbfb;
+  // background-color: #2f4e71;
+}
+
+.home-box {
+  background-color: white;
+  .intro {
+    background-color: white;
+    background-size: cover;
+    // box-shadow: 0px 10px 10px rgb(66, 64, 64) inset;
+    // background-image: url('../../assets/home\ page\ 2.png');
+
+    .intro-box {
+      color: white;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .overview {
+    text-align: center;
+    color: white;
+    padding: 60px 70px;
+    background-color: black;
+    height: fit-content;
+
+    h2 {
+      font-family: "Ysabeau SC", sans-serif;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Titillium Web", sans-serif;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .video {
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      min-height: 70vh;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .home-box {
+    .intro {
+      background-color: white;
+      background-size: cover;
+
+      .intro-box {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .overview {
+      text-align: center;
+      color: white;
+      padding: 50px 10px;
+
+      .video {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        
+      min-height: 50vh;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .home-box {
+    .intro {
+      background-color: white;
+      background-size: cover;
+
+      .intro-box {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .overview {
+      text-align: center;
+      color: white;
+      padding: 10px 10px;
+      // background-color: black;
+
+      .video {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        min-height: 50vh;
+      }
+    }
+  }
+}
