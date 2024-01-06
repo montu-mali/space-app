@@ -2,7 +2,7 @@ import React from 'react'
 import "./Home.scss"
 import { Link, NavLink } from 'react-router-dom'
 import Member from '../MemberPage/Member'
-import homeimge from '../../assets/home page 2.png'
+import homeimge from '../../assets/home page 2 (2).png'
 // import video from "../../assets/video.mp4"
 
 const Home = () => {

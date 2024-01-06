@@ -5,7 +5,7 @@ import eclips from "../../assets/imgs/eclips-img.jpg";
 const NewsEvent = () => {
   return (
     <>
-      <div className='flx crds'>
+      <div className='flex_cards'>
         <div className="card">
           <img className="card-img-top" src={eclips} alt="Card image cap" />
           <div className="card-body">
@@ -43,8 +43,6 @@ const NewsEvent = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='flx crds'>
         <div className="card">
           <img className="card-img-top" src="https://radseason.com/wp-content/uploads/2017/06/Best-Solar-Eclipse-Festivals-in-the-US.jpg" alt="Card image cap" />
           <div className="card-body">

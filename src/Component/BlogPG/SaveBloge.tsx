@@ -36,7 +36,7 @@ export const SaveBloge = () => {
         <div className="SaveB_box">
           <div className="team">
             <div className="centent_box">
-              <div className="button">Blogs</div>
+              {/* <div className="button">Blogs</div> */}
               {/* <h1>Our Creative Team</h1> */}
             </div>
             <div className="team_member">

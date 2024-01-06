@@ -21,67 +21,7 @@ const Footer = () => {
             <img src={logo} alt="" />
           </h4>
           <div className="help">
-            <div className="help-box">
-              <div className="company three-box">
-                <ul className="help-lu ">
-                  <li>
-                    <Link className="link" to="./">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="/add-blog">
-                      Blog
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="policies three-box">
-                {/* <h4 className="head">Policies</h4> */}
-                <ul>
-                  <li>
-                    <Link className="link" to="./heliophysics">
-                      Heliophysics
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="/parker-probe">
-                      ParkerProbe
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="./solar-eclips">
-                      Solar Eclips
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="./solar-flares">
-                      Solar Flares
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="help three-box">
-                {/* <h4 className="head">Help</h4> */}
-                <ul>
-                 cccccc
-                    <Link className="link" to="./multi-media">
-                      Image
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="./news-event">
-                      News & Events
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link" to="">
-                      Over View
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            
             <div className="contect">
               <div className="contect-box">
                 <ul>

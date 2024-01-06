@@ -19,7 +19,7 @@ const Header = () => {
             </Link>
           </div>
           {/* <NavLink to=''></NavLink> */}
-          <div className={navBar ? "mobile_nav navbar-box " : "navbar-box "}>
+          <div className={navBar ? "mobile_nav navbar-box" : "navbar-box "}>
             <div className="navbar" onClick={() => setNavBar(false)}>
               <ul >
                 <li>
@@ -42,13 +42,19 @@ const Header = () => {
                       <NavLink className="navLink" to="parker-probe">
                         ParkerProbe
                       </NavLink>
-                      <div className="navLink dropdown2">
+                      <NavLink className="navLink" to="solar-eclips">
+                      Solar Eclips
+                      </NavLink>
+                      <NavLink className="navLink" to="solar-flares">
+                      Solar Flares
+                      </NavLink>
+                      {/* <div className="navLink dropdown2">
                         Solar Maximum
                         <div className="dropdown21">
                           <NavLink to="solar-eclips">Solar Eclips</NavLink>
                           <NavLink to="solar-flares">Solar Flares</NavLink>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </li>

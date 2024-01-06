@@ -3,13 +3,11 @@ body {
   margin: 0;
 }
 .heliop_box {
-  background-color: black;
   overflow: hidden;
+  padding: 40px 0;
   .heliop {
     .image_box {
-      padding: 0 140px;
       padding-top: 10px;
-      height: 80vh;
       img {
         height: 100%;
         width: 100%;
@@ -29,6 +27,9 @@ body {
         color: black;
         display: grid;
         gap: 20px;
+        p{
+          text-align: justify;
+        }
 
         img {
           margin-top: 0 30px;
@@ -43,9 +44,7 @@ body {
   .heliop_box {
     .heliop {
       .image_box {
-        padding: 0 140px;
         padding-top: 10px;
-        height: 60vh;
         img {
           height: 100%;
           width: 100%;
@@ -65,9 +64,7 @@ body {
   .heliop_box {
     .heliop {
       .image_box {
-        padding: 0 80px;
         padding-top: 10px;
-        height: 60vh;
         img {
           height: 100%;
           width: 100%;
@@ -86,9 +83,7 @@ body {
   .heliop_box {
     .heliop {
       .image_box {
-        padding: 0 20px;
         padding-top: 10px;
-        height: 50vh;
         img {
           height: 100%;
           width: 100%;

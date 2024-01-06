@@ -75,7 +75,7 @@ const AddBlog = () => {
       <div className="address">
         <div className="address-box">
           <div className="head">
-            <h3>Manage Addresses</h3>
+            <h3>BLOG</h3>
           </div>
           <div className="add-save">
             <div className="add-address">

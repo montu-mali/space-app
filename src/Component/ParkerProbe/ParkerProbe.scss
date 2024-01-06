@@ -5,9 +5,10 @@ body {
 .parker_box {
   background-color: black;
   overflow: hidden;
+  padding: 40px 0;
   .parkerP {
     .image_box {
-      height: 80vh;
+      // height: 80vh;
       img {
         height: 100%;
         width: 100%;
@@ -28,6 +29,10 @@ body {
         display: grid;
         gap: 20px;
 
+        p{
+          text-align: justify;
+        }
+
         img {
           margin-top: 0 30px;
           width: 100%;
@@ -41,7 +46,7 @@ body {
   .parker_box {
     .parkerP {
       .image_box {
-        height: 60vh;
+        // height: 60vh;
         img {
           height: 100%;
           width: 100%;
@@ -60,7 +65,7 @@ body {
   .parker_box {
     .parkerP {
       .image_box {
-        height: 60vh;
+        // height: 60vh;
         img {
           height: 100%;
           width: 100%;
