@@ -64,12 +64,7 @@ const Footer = () => {
               <div className="help three-box">
                 {/* <h4 className="head">Help</h4> */}
                 <ul>
-                  <li>
-                    <Link className="link" to="./multi-media">
-                      Video
-                    </Link>
-                  </li>
-                  <li>
+                 cccccc
                     <Link className="link" to="./multi-media">
                       Image
                     </Link>
