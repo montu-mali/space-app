@@ -2,7 +2,7 @@ const teamMemberApi = [
     {
         name: "MONTU MALI",
         skill: "Full-Stack Developer",
-        about:"Frontend devs build user-friendly websites with HTML, CSS, JavaScript, React, TypeScript, ensuring superb user experiences.",
+        about:"Full-Stack devs build user-friendly websites with HTML, CSS, JavaScript, React,Next.js,Node.js,MongoDB TypeScript, ensuring superb user experiences.",
         LinkedInLink: "https://www.linkedin.com/in/montu-mali",
         git_ytLink: "https://github.com/montu-mali",
         email: 'hello@montu.bio',
